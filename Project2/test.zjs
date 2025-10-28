@@ -1,0 +1,14 @@
+set_color 255 0 0;
+point 200 200;
+
+set_color 0 255 0;
+line 100 100 900 700;
+
+set_color 0 0 255;
+circle 512 384 100;
+
+set_color 255 255 0;
+rectangle 700 100 150 100;
+
+end;
+

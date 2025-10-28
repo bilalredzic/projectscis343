@@ -1,4 +1,7 @@
 #include "zoomjoystrong.h"
+SDL_Texture* texture;
+SDL_Renderer* renderer;
+SDL_Window* window;
 #include <math.h>
 #include <SDL2/SDL.h>
 #include <unistd.h>
