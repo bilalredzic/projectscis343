@@ -323,6 +323,9 @@ void yyfree ( void *  );
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
 /* Begin user sect3 */
+
+#define yywrap() (/*CONSTCOND*/1)
+#define YY_SKIP_YYWRAP
 typedef flex_uint8_t YY_CHAR;
 
 FILE *yyin = NULL, *yyout = NULL;
@@ -476,12 +479,11 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "zoomjoystrong.lex"
 #line 2 "zoomjoystrong.lex"
-#include "zoomjoystrong.tab.h"   /* Contains token definitions from Bison */
+#include "zoomjoystrong.tab.h" /* Contains token definitions from Bison */
 #include <stdio.h>
 #include <stdlib.h>
-#line 482 "lex.yy.c"
-/* Regular expressions */
-#line 484 "lex.yy.c"
+#line 485 "lex.yy.c"
+#line 486 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -698,10 +700,10 @@ YY_DECL
 		}
 
 	{
-#line 11 "zoomjoystrong.lex"
+#line 9 "zoomjoystrong.lex"
 
 
-#line 704 "lex.yy.c"
+#line 706 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -760,96 +762,96 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "zoomjoystrong.lex"
-{return END;}
+#line 11 "zoomjoystrong.lex"
+{ return END; } {/* return END token */}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "zoomjoystrong.lex"
-{return END_STATEMENT;}
+#line 12 "zoomjoystrong.lex"
+{ return END_STATEMENT; } {/* statement terminator */}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "zoomjoystrong.lex"
-{return POINT;}
+#line 13 "zoomjoystrong.lex"
+{ return POINT; } {/* point command */}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "zoomjoystrong.lex"
-{return LINE;}
+#line 14 "zoomjoystrong.lex"
+{ return LINE; } {/* line command */}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "zoomjoystrong.lex"
-{ return CIRCLE;}
+#line 15 "zoomjoystrong.lex"
+{ return CIRCLE; } {/* circle command */}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 18 "zoomjoystrong.lex"
-{ return RECTANGLE;}
+#line 16 "zoomjoystrong.lex"
+{ return RECTANGLE; } {/* rectangle command */}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 19 "zoomjoystrong.lex"
-{return SET_COLOR;}
+#line 17 "zoomjoystrong.lex"
+{ return SET_COLOR; } {/* set_color command */}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 21 "zoomjoystrong.lex"
-{ yylval.ival = atoi(yytext); return INT; }
+#line 19 "zoomjoystrong.lex"
+{ yylval.ival = atoi(yytext); return INT; } {/* integer literal */}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 22 "zoomjoystrong.lex"
-{ yylval.fval = atof(yytext); return FLOAT; }
+#line 20 "zoomjoystrong.lex"
+{ yylval.fval = atof(yytext); return FLOAT; } {/* floating-point literal */}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 24 "zoomjoystrong.lex"
-{ yylval.var = yytext[1]; return VARIABLE;}
+#line 22 "zoomjoystrong.lex"
+{ yylval.var = yytext[1]; return VARIABLE; } {/* variable like $a */}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 "zoomjoystrong.lex"
-{return EQUALS;}
+#line 24 "zoomjoystrong.lex"
+{ return EQUALS; } {/* equals operator */}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 "zoomjoystrong.lex"
-{return PLUS;}
+#line 25 "zoomjoystrong.lex"
+{ return PLUS; } {/* addition operator */}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 28 "zoomjoystrong.lex"
-{return MINUS;}
+#line 26 "zoomjoystrong.lex"
+{ return MINUS; } {/* subtraction operator */}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 29 "zoomjoystrong.lex"
-{return MULT;}
+#line 27 "zoomjoystrong.lex"
+{ return MULT; } {/* multiplication operator */}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 30 "zoomjoystrong.lex"
-{return DIV;}
+#line 28 "zoomjoystrong.lex"
+{ return DIV; } {/* division operator */}
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
 YY_RULE_SETUP
-#line 32 "zoomjoystrong.lex"
-;
+#line 30 "zoomjoystrong.lex"
+; {/* ignore whitespace and newlines */}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 34 "zoomjoystrong.lex"
-{printf("Unknown: %s\n",yytext);}
+#line 32 "zoomjoystrong.lex"
+{ printf("Unknown: %s\n", yytext); } {/* print unknown characters */}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 36 "zoomjoystrong.lex"
+#line 34 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
-#line 852 "lex.yy.c"
+#line 854 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1854,7 +1856,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 36 "zoomjoystrong.lex"
+#line 34 "zoomjoystrong.lex"
 
 
-int yywrap() { return 1; }
+

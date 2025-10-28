@@ -78,11 +78,11 @@
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 11 "zoomjoystrong.y"
+#line 17 "zoomjoystrong.y"
 {
-    int ival;
-    float fval;
-    char var;
+    int ival; /* integer values */
+    float fval; /* float values */
+    char var; /* variable name (e.g. $a) */
 }
 /* Line 1529 of yacc.c.  */
 #line 89 "zoomjoystrong.tab.h"

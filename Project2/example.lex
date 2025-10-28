@@ -8,7 +8,7 @@
 
 %option noyywrap
 
-%% // rules section
+%% 
 
 "end"   {return END;}
 "POINT" | "point" {return POINT;}
@@ -25,21 +25,15 @@
 \$[a-zA-Z] {yyval.var = yytext[1]; return VARIABLE}
 
 
-//ignore whitespace
 [ \t\n]+ {/*ignore white space*/}
 
-// arithmetic and assignment
 
 "=" {return EQUALS;}
 "+" {return PLUS;}
--
-*
-/
+"-" {return MINUS;}
+"*" {return MULT;}
+"/" {return DIV;}
 
-. { [printf("unknown character: %s\n",)])}
+. { [printf("unknown character: %s\n",)]}
 
 %%
-
-
-
-
