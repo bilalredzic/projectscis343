@@ -11,7 +11,11 @@ int yylex(void); /* lexer function from Flex */
 #define MIN_COLOR 0
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
+
+float vars[26] = {0}; /* creates an array to store variable values */
 %}
+
+
 
 /* define the union before tokens */
 %union {
@@ -73,11 +77,17 @@ statement:
                 set_color(r, g, b); 
         }
     }
+    | VARIABLE EQUALS value END_STATEMENT { vars[$1 - 'a'] = $3; }
+    | VARIABLE EQUALS value PLUS value END_STATEMENT{ vars[$1 - 'a'] = $3 + $5; }
+    | VARIABLE EQUALS value MULT value END_STATEMENT{ vars[$1 - 'a'] = $3 * $5; }
+    | VARIABLE EQUALS value DIV value END_STATEMENT{ vars[$1 - 'a'] = $3 / $5; }
+    | VARIABLE EQUALS value MINUS value END_STATEMENT{ vars[$1 - 'a'] = $3 - $5; }
 ;
 
 value:
     INT { $$ = (float)$1;  /* Convert INT (ival) to float (fval) for $$ */ }
     | FLOAT { $$ = $1; /* FLOAT (fval) directly assigned to $$ (fval) */ }
+    | VARIABLE { $$ = vars[$1 - 'a']; /* VARIABLE value retrieved from varaibles array */}
     ;
 
 %%
