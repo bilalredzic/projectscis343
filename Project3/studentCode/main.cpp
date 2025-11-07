@@ -31,7 +31,7 @@ int main(int argc, char** argv){
 	ServiceRecord first("Oil change.", 9.95f);
 	a.addRecord(first);
 
-	Car b(a);
+	Car b(1985, "Toyota Hilux");
 	first = ServiceRecord("Radiator flush.", 19.95);
 	b.addRecord(first);
 
@@ -39,7 +39,7 @@ int main(int argc, char** argv){
 	inventory.push_back(a);
 	inventory.push_back(b);
 
-	Car c(b);
+	Car c(1985, "Toyota Hilux");
 	c.setModel("Ford F150");
 
 	std::cout << "Customer wants to trade in " << c << std::endl;
@@ -51,4 +51,8 @@ int main(int argc, char** argv){
 	for(auto it = inventory.begin(); it != inventory.end(); ++it){
 		std::cout << *it << std::endl;
 	}
+	std::cout << "A ID: " << a.getId() << std::endl;
+std::cout << "B ID: " << b.getId() << std::endl;
+std::cout << "C ID: " << c.getId() << std::endl;
+
 }
