@@ -49,11 +49,15 @@ std::ostream& operator<<(std::ostream& os, const Car& car){
 	return os;
 }
 bool Car::operator<(const Car& other) const {
-    double total = 0, otherTotal = 0;
-    for (auto& r : records) 
-		total += r.getCost();
-    for (auto& r : other.records) 
-		otherTotal += r.getCost();
+    double total = 0;
+    double otherTotal = 0;
+    for (size_t i = 0; i < records.size(); i++) {
+        total += records[i].getCost();
+    }
+    for (size_t i = 0; i < other.records.size(); i++) {
+        otherTotal += other.records[i].getCost();
+    }
     return total < otherTotal;
 }
+
 
