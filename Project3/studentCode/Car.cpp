@@ -5,8 +5,11 @@ int Car::current_id = 0;
 
 Car::Car(int year, std::string model){
 	this->id = Car::current_id++;
+	std::cout << "Constructor called for ID " << this->id << std::endl;
+
 	this->year = year;
 	this->model = model;
+	
 }
 
 int Car::getId() const {
@@ -45,3 +48,12 @@ std::ostream& operator<<(std::ostream& os, const Car& car){
 	}
 	return os;
 }
+bool Car::operator<(const Car& other) const {
+    double total = 0, otherTotal = 0;
+    for (auto& r : records) 
+		total += r.getCost();
+    for (auto& r : other.records) 
+		otherTotal += r.getCost();
+    return total < otherTotal;
+}
+
