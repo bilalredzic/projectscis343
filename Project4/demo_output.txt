@@ -1,0 +1,363 @@
+node main.js
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 4
+
+=== pokemon List ===
+1. bulbasaur
+2. ivysaur
+3. venusaur
+4. charmander
+5. charmeleon
+6. charizard
+7. squirtle
+8. wartortle
+9. blastoise
+10. caterpie
+11. metapod
+12. butterfree
+13. weedle
+14. kakuna
+15. beedrill
+16. pidgey
+17. pidgeotto
+18. pidgeot
+19. rattata
+20. raticate
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: 1
+
+=== pokemon List ===
+21. spearow
+22. fearow
+23. ekans
+24. arbok
+25. pikachu
+26. raichu
+27. sandshrew
+28. sandslash
+29. nidoran-f
+30. nidorina
+31. nidoqueen
+32. nidoran-m
+33. nidorino
+34. nidoking
+35. clefairy
+36. clefable
+37. vulpix
+38. ninetales
+39. jigglypuff
+40. wigglytuff
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: 3
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 1
+Enter a search term (or 'q' to go back):vul
+Error fetching data: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:6433:19)
+    at successSteps (node:internal/deps/undici/undici:6414:27)
+    at readAllBytes (node:internal/deps/undici/undici:5380:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Enter a search term (or 'q' to go back):vulpix
+
+=== Pokémon Info ===
+Name: vulpix
+Height: 6
+Weight: 99
+Base Experience: 60
+Moves:
+ - headbutt
+ - tackle
+ - body-slam
+ - take-down
+ - double-edge
+ - tail-whip
+ - roar
+ - disable
+ - ember
+ - flamethrower
+ - fire-spin
+ - dig
+ - toxic
+ - hypnosis
+ - agility
+ - quick-attack
+ - rage
+ - mimic
+ - double-team
+ - confuse-ray
+ - reflect
+ - bide
+ - fire-blast
+ - swift
+ - skull-bash
+ - rest
+ - substitute
+ - flame-wheel
+ - snore
+ - curse
+ - flail
+ - spite
+ - protect
+ - feint-attack
+ - endure
+ - charm
+ - swagger
+ - attract
+ - sleep-talk
+ - return
+ - frustration
+ - safeguard
+ - pain-split
+ - baton-pass
+ - encore
+ - iron-tail
+ - hidden-power
+ - sunny-day
+ - psych-up
+ - heat-wave
+ - will-o-wisp
+ - memento
+ - facade
+ - helping-hand
+ - role-play
+ - imprison
+ - grudge
+ - secret-power
+ - weather-ball
+ - overheat
+ - extrasensory
+ - howl
+ - covet
+ - healing-wish
+ - natural-gift
+ - payback
+ - power-swap
+ - flare-blitz
+ - dark-pulse
+ - energy-ball
+ - nasty-plot
+ - zen-headbutt
+ - captivate
+ - ominous-wind
+ - flame-burst
+ - flame-charge
+ - foul-play
+ - round
+ - hex
+ - incinerate
+ - inferno
+ - tail-slap
+ - snarl
+ - confide
+ - mystical-fire
+ - baby-doll-eyes
+ - burning-jealousy
+ - tera-blast
+Enter a search term (or 'q' to go back):q
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 3
+Enter a search term (or 'q' to go back):sleep-talk
+
+=== Move Info ===
+Name: sleep-talk
+Accuracy: null
+Power: null
+PP: 10
+Type: normal
+Damage Class: status
+Enter a search term (or 'q' to go back):q
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 5
+
+=== item List ===
+1. master-ball
+2. ultra-ball
+3. great-ball
+4. poke-ball
+5. safari-ball
+6. net-ball
+7. dive-ball
+8. nest-ball
+9. repeat-ball
+10. timer-ball
+11. luxury-ball
+12. premier-ball
+13. dusk-ball
+14. heal-ball
+15. quick-ball
+16. cherish-ball
+17. potion
+18. antidote
+19. burn-heal
+20. ice-heal
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: 1
+
+=== item List ===
+21. awakening
+22. paralyze-heal
+23. full-restore
+24. max-potion
+25. hyper-potion
+26. super-potion
+27. full-heal
+28. revive
+29. max-revive
+30. fresh-water
+31. soda-pop
+32. lemonade
+33. moomoo-milk
+34. energy-powder
+35. energy-root
+36. heal-powder
+37. revival-herb
+38. ether
+39. max-ether
+40. elixir
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: 2
+
+=== item List ===
+1. master-ball
+2. ultra-ball
+3. great-ball
+4. poke-ball
+5. safari-ball
+6. net-ball
+7. dive-ball
+8. nest-ball
+9. repeat-ball
+10. timer-ball
+11. luxury-ball
+12. premier-ball
+13. dusk-ball
+14. heal-ball
+15. quick-ball
+16. cherish-ball
+17. potion
+18. antidote
+19. burn-heal
+20. ice-heal
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: a
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 4
+
+=== pokemon List ===
+1. bulbasaur
+2. ivysaur
+3. venusaur
+4. charmander
+5. charmeleon
+6. charizard
+7. squirtle
+8. wartortle
+9. blastoise
+10. caterpie
+11. metapod
+12. butterfree
+13. weedle
+14. kakuna
+15. beedrill
+16. pidgey
+17. pidgeotto
+18. pidgeot
+19. rattata
+20. raticate
+
+Options: 
+1. Next Page
+2. Previous Page
+3. Quit to Menu
+Enter your choice: a
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 2
+Enter a search term (or 'q' to go back):antidote
+
+=== Item Info ===
+Name: antidote
+Cost: 200
+Category: status-cures
+Effect: Used on a party Pokémon
+:   Cures poison.
+Enter a search term (or 'q' to go back):q
+
+=== Pokedex Menu ===
+1. Search Pokémon
+2. Search Item
+3. Search Move
+4. List all Pokémon
+5. List all Items
+6. List all Moves
+7. Quit
+Enter your choice: 7
+byebye

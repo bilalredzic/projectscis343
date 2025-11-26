@@ -47,7 +47,7 @@ run(); // Start the program by running the main function
 function prompt(cb) { // Function to prompt the user for a search term
     rl.question("Enter a search term (or 'q' to go back):", (term) => { // Ask the user for a search term
         if (term.toLowerCase() === "q") {
-            run(); // go back to main menu
+            return run(); // go back to main menu
         }
         else {
             cb(term);  // call the callback function with the user’s input

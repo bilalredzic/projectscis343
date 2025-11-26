@@ -1,0 +1,8 @@
+{
+  "name": "pokedex-project",
+  "description": "Node.js terminal Pokédex using PokeAPI.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
